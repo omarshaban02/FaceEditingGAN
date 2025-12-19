@@ -19,7 +19,7 @@
 
 ---
 
-### **2. GitHub README: How to Reproduce**
+### **2. How to Reproduce**
 
 #### **Project Overview**
 
