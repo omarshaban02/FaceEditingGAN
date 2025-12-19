@@ -37,11 +37,3 @@ This repository provides a complete pipeline for professional-grade facial manip
 2. **Facial Expression/Hair:** Use the `InterfaceGANManipulator` class. Use `manipulate(latent, 'smile', strength=X)` to change expression or hair length.
 3. **Realistic Aging:** Call `sam_manipulator.change_age(image_path, target_age=60)` to transform the subject's age.
 4. **3D Pose:** Use `eg3d_manipulator.change_pose(latent, yaw=0.5)` to rotate the head while maintaining 3D structure.
-
----
-
-### **3. Experimental Results (For Your Report)**
-
-* **Identity Consistency:** Through the use of e4e and LPIPS, the person's core features remain unchanged even when the hair color or age is drastically altered.
-* **3D Stability:** EG3D provides superior results for "change pose" tasks compared to standard latent-direction methods, which often lead to "face warping".
-* **Optimization:** The implementation includes a `ModelManager` to handle memory on Colab Free Tier, preventing "Out of Memory" (OOM) errors during heavy model switching.
